@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Zakaz</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/baqbaq_bezfon.png" alt="baqbaq_bezfon" srcset="">
+        <form>
+            <input type="text" placeholder="Qidiruv...">
+            <button type="submit">Qidiruv</button>
+        </form>
+        <div">
+            <button id="toggleBtn" class="toggle-btn">🌙</button>
+            </div>
+    </header>
+
+    <div class="zakaz_head">
+        <h2 class="zakaz_id">Zakaz No'meri:</h2>
+        <nav class="head_menu">
+            <nav class="head_menu1">
+                <h3>Mijoz ismi:</h3>
+                <h3>Sklad nomi:</h3>
+            </nav>
+            <nav class="head_menu2">
+                <h3>Telfon raqam:</h3>
+                <h3>Sana:</h3>
+            </nav>
+        </nav>
+
+        <div class="tovarlar">
+            <table>
+                <thead class="table_header">
+                    <tr>
+                        <th>Tovar nomi</th>
+                        <th>Miqdori</th>
+                        <th>Narxi</th>
+                        <th>Jami</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tovar 1</td>
+                        <td>2</td>
+                        <td>50,000 UZS</td>
+                        <td>100,000 UZS</td>
+                    </tr>
+                    <tr>
+                        <td>Tovar 2</td>
+                        <td>1</td>
+                        <td>75,000 UZS</td>
+                        <td>75,000 UZS</td>
+                    </tr>
+                    <!-- Qo'shimcha tovarlar shu yerda ko'rsatiladi -->
+                </tbody>
+            </table>
+
+            <div class="total_amount">
+                <h3>Umumiy Jami: 175,000 UZS</h3>
+            </div>
+
+            <div class="action_buttons">
+                <button class="complete_btn">Zakazni Yakunlash</button>
+                <button class="cancel_btn">Zakazni Bekor Qilish</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Mening Saytim. Barcha huquqlar himoyalangan.</p>
+    </footer>
+</body>
+<script src="./dark-light.js"></script>
+
+</html>
