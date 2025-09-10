@@ -45,13 +45,22 @@ header img {
 }
 
 header form {
-    margin: 20px 50px;
+    margin: 20px 100px;
     display: flex;
-    align-items: center;
-    flex-grow: 1;
     justify-content: flex-end;
     max-width: 600px;
     gap: 10px;
+}
+
+.header_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 header input[type="text"] {
@@ -140,7 +149,6 @@ body.dark {
     background: #333;
     color: #333333;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body.dark .toggle-btn {
@@ -164,20 +172,13 @@ body.dark .toggle-btn:hover {
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
-.toggle-btn:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 main {
     margin-top: 20px;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
     max-width: 100%;
-    overflow-x: auto;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -534,24 +535,24 @@ body.dark header {
     border: 1px solid #555;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
+
 body.dark header:hover {
     color: white;
     border: 1px solid #555;
 }
+
 body.dark header:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
-body.dark header:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
-}
+
 body.dark header img {
     border: 1px solid #555;
     background-color: #2c2c2c;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
+
 body.dark header img:hover {
     transform: scale(1.05);
 }
@@ -569,26 +570,25 @@ body.dark header input[type="text"]:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
+
 body.dark header button {
     background: #555;
     color: #eee;
     border: 1px solid #777;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
+
 body.dark header button:hover {
     background: #666;
     color: white;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     border: 1px solid #777;
 }
+
 body.dark header button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
-}
-body.dark header button:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
 }
 
 /* Sticky Header styles */
@@ -625,11 +625,6 @@ header.sticky:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
-}
-
-header.sticky:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 header.sticky img {
@@ -706,7 +701,6 @@ header.sticky button:focus {
 }
 
 header.sticky button:active {
-    transform: scale(0.98);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -719,7 +713,9 @@ body.dark .zakaz_head {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-body.dark .head_menu, body.dark .head_menu1, body.dark .head_menu2 {
+body.dark .head_menu,
+body.dark .head_menu1,
+body.dark .head_menu2 {
     background-color: #1e1e1e;
     color: #aaa;
     border: 1px solid #555;
@@ -732,14 +728,6 @@ body.dark .zakaz_id {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-body.dark .zakaz_head:hover,
-body.dark .head_menu:hover,
-body.dark .head_menu1:hover,
-body.dark .head_menu2:hover,
-body.dark .zakaz_id:hover {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
 body.dark .zakaz_head:focus,
 body.dark .head_menu:focus,
 body.dark .head_menu1:focus,
@@ -747,15 +735,6 @@ body.dark .head_menu2:focus,
 body.dark .zakaz_id:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 2px solid rgba(81, 203, 238, 1);
-}
-
-body.dark .zakaz_head:active,
-body.dark .head_menu:active,
-body.dark .head_menu1:active,
-body.dark .head_menu2:active,
-body.dark .zakaz_id:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
 }
 
 /* Styles for tovarlar.css */
@@ -808,13 +787,6 @@ body.dark .zakaz_id:active {
     border-bottom: 2px solid rgba(81, 203, 238, 1);
 }
 
-.tovarlar h2:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    background-color: #45a049;
-    color: #fff;
-}
-
 .tovarlar h2 {
     margin-top: -8px;
     border-radius: 8px 8px 0 0;
@@ -843,7 +815,6 @@ body.dark .tovarlar h2 {
 }
 
 body.dark .tovarlar h2:hover {
-    background-color: #444;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -853,19 +824,13 @@ body.dark .tovarlar h2:focus {
     border-bottom: 2px solid rgba(81, 203, 238, 1);
 }
 
-body.dark .tovarlar h2:active {
-    transform: scale(0.98);
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
-    background-color: #333;
-    color: #ccc;
-}
-
 .tovarlar table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.tovarlar th, .tovarlar td {
+.tovarlar th,
+.tovarlar td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -877,72 +842,44 @@ body.dark .tovarlar h2:active {
     font-weight: 700;
 }
 
-.tovarlar tr:hover {
-    background-color: #f1f1f1;
-}
-
-.tovarlar th:hover, .tovarlar td:hover {
-    background-color: #e2e2e2;
-    color: #000;
-}
-
-.tovarlar th:focus, .tovarlar td:focus {
+.tovarlar th:focus,
+.tovarlar td:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
-.tovarlar th:active, .tovarlar td:active {
-    transform: scale(0.98);
-    background-color: #f4f4f4;
-    color: #000;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.tovarlar th:first-child:hover, .tovarlar td:first-child:hover,
-.tovarlar th:last-child:hover, .tovarlar td:last-child:hover {
-    background-color: #e2e2e2;
-    color: #000;
-}
-.tovarlar th:first-child:focus, .tovarlar td:first-child:focus,
-.tovarlar th:last-child:focus, .tovarlar td:last-child:focus {
+.tovarlar th:first-child:focus,
+.tovarlar td:first-child:focus,
+.tovarlar th:last-child:focus,
+.tovarlar td:last-child:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
-.tovarlar th:first-child:active, .tovarlar td:first-child:active,
-.tovarlar th:last-child:active, .tovarlar td:last-child:active {
-    transform: scale(0.98);
-    background-color: #f4f4f4;
-    color: #000;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
+
 /* Dark mode styles for tovarlar table */
-body.dark .tovarlar th, body.dark .tovarlar td {
+body.dark .tovarlar th,
+body.dark .tovarlar td {
     background-color: #2c2c2c;
     color: #ccc;
     border-bottom: 1px solid #555;
 }
+
 body.dark .tovarlar tr:hover {
     background-color: #3e3e3e;
 }
-body.dark .tovarlar th:hover, body.dark .tovarlar td:hover {
-    background-color: #444;
+
+body.dark .tovarlar th:hover,
+body.dark .tovarlar td:hover {
     color: #fff;
 }
-body.dark .tovarlar th:focus, body.dark .tovarlar td:focus {
+
+body.dark .tovarlar th:focus,
+body.dark .tovarlar td:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
-}
-body.dark .tovarlar th:active, body.dark .tovarlar td:active {
-    transform: scale(0.98);
-    background-color: #2c2c2c;
-    color: #ccc;
-    border: 1px solid #555;
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive Design for tovarlar */
@@ -956,19 +893,119 @@ body.dark .tovarlar th:active, body.dark .tovarlar td:active {
         padding: 8px 0;
     }
 
-    .tovarlar th, .tovarlar td {
+    .tovarlar th,
+    .tovarlar td {
         padding: 8px 10px;
         font-size: 14px;
     }
 }
+
 /* End of styles */
 /* Additional styles for better UX */
-button, input[type="text"], .dropdown, .toggle-btn, header.sticky, .zakaz_head, .head_menu, .head_menu1, .head_menu2, .zakaz_id, .tovarlar h2, .tovarlar th, .tovarlar td {
+button,
+input[type="text"],
+.dropdown,
+.toggle-btn,
+header.sticky,
+.zakaz_head,
+.head_menu,
+.head_menu1,
+.head_menu2,
+.zakaz_id,
+.tovarlar h2,
+.tovarlar th,
+.tovarlar td {
     cursor: pointer;
 }
-button:disabled, input[type="text"]:disabled, .dropdown:disabled, .toggle-btn:disabled {
+
+button:disabled,
+input[type="text"]:disabled,
+.dropdown:disabled,
+.toggle-btn:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
+
 /* End of additional styles */
 /* End of styles */
+
+/* Dark mode styles for .total_amount */
+
+body.dark .total_amount {
+    background-color: #2c2c2c;
+    color: #ccc;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .total_amount:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.total_amount {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* Styles for total_amount */
+
+/* Dark mode styles for tovarlar .action_buttons */
+
+body.dark .tovarlar .action_buttons button {
+    background: #555;
+    color: #eee;
+    border: 1px solid #777;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .tovarlar .action_buttons button:hover {
+    background: #666;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border: 1px solid #777;
+}
+
+body.dark .tovarlar .action_buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.tovarlar .action_buttons button {
+    box-sizing: border-box;
+    z-index: 1001;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+    background: #fff;
+    color: #333333;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.tovarlar .action_buttons button:hover {
+    background: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #45a049;
+}
+
+.tovarlar .action_buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.tovarlar .action_buttons button:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* End of styles for total_amount and action_buttons */
