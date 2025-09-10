@@ -1,3 +1,9 @@
 @import url(./style.css);
 @import url(./tovarlar.css);
 @import url(./zakaz_menu.css);
+
+.logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: white;
+}
