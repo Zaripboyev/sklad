@@ -9,16 +9,12 @@ body {
     background-color: #fff;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
     max-width: 1200px;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background-color: #f4f4f4;
 }
 
 header {
-    border-bottom: 2px solid #ccc;
     max-width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -27,7 +23,8 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     margin-bottom: 20px;
     position: sticky;
     top: 0;
@@ -55,12 +52,15 @@ header form {
 .header_title {
     font-size: 1.5em;
     font-weight: bold;
-    color: white;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     transition: color 0.3s, text-shadow 0.3s;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header input[type="text"] {
@@ -338,16 +338,6 @@ body.dark main img {
     border: 1px solid #555;
     background-color: #2c2c2c;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-}
-
-body.dark footer {
-    background-color: #1e1e1e;
-    color: #aaa;
-    border-top: 2px solid #555;
-}
-
-body.dark footer a {
-    color: #81C784;
 }
 
 body.dark footer a:hover {
@@ -950,6 +940,7 @@ body.dark .total_amount:focus {
     font-size: 16px;
     font-weight: 600;
 }
+
 /* Styles for total_amount */
 
 /* Dark mode styles for tovarlar .action_buttons */

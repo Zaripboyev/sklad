@@ -1,12 +1,12 @@
 .zakaz_head {
-    border: 2px solid #333;
+    border: 1px solid #45a049;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     color: #45a049;
     position: relative;
     z-index: 1;
@@ -22,7 +22,7 @@
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     gap: 20px;
